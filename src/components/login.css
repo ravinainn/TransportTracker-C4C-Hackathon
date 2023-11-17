@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'CustomRegular';
+    src: url('../Sk-Modernist/Sk-Modernist-Regular.otf') format('truetype');
+    /* Add more font-face rules for different font variations if needed */
+}
+
+@font-face {
+    font-family: 'CustomBold';
+    src: url('../Sk-Modernist/Sk-Modernist-Bold.otf') format('truetype');
+    /* Add more font-face rules for different font variations if needed */
+}
+
+
+* {
+    font-family: CustomRegular;
+}
+
+.login {
+
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f6f1f1;
+
+}
+
+.left,
+.right {
+
+    width: 40%;
+    height: 60vh;
+    /* margin: 2rem; */
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.left {
+    border-radius: 25px 0 0 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.left h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.toggle button {
+    border: none;
+    width: 200px;
+    height: 30px;
+    font-size: 1rem;
+    background-color: transparent;
+    border-radius: 25px;
+
+}
+
+.toggle button.activeBtn {
+    border-bottom: 5px solid #13c7e6;
+
+}
+
+.left form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 1.2rem;
+}
+
+.left form .form-comp {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    /* gap: .2rem; */
+}
+
+.left form label {
+
+    text-align: start;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: .6vw;
+
+}
+
+.left form input {
+    text-align: start;
+    padding: .6vw;
+    font-size: 1rem;
+    /* font-size: 1.4rem;
+    font-weight: 800; */
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.left form input:focus {
+    outline: none;
+    border-bottom: solid #13c7e6 2px;
+}
+
+.left form input::placeholder {
+    font-size: .8rem;
+}
+
+.btn {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    padding: .6rem 2.4rem;
+    background-color: #13c7e6;
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+
+
+    /* padding: 1.1rem 2.1rem; */
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #13c7e6;
+    color: black;
+}
+
+
+.btn:focus {
+    color: #fff;
+    /* border: 1px solid #01265B; */
+    background-color: #13c7e6;
+
+}
+
+.right {
+    border-radius: 0 25px 25px 0;
+    background-color: #136b93;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right h1 {
+    text-align: left;
+    font-family: CustomBold;
+    /* font-weight: 800; */
+    color: #fff;
+    font-size: 2.4rem;
+}
